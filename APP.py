@@ -2,7 +2,6 @@ from flask import Flask, render_template, request
 from pdf import extract_text_from_pdf
 from skill_extractor import extract_skills
 from matches import calculate_match_score
-
 app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
