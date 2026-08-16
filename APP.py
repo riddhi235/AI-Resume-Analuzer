@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
-from utils.pdf_parser import extract_text_from_pdf
-from utils.skill_extractor import extract_skills
-from utils.matcher import calculate_match_score
+from pdf import extract_text_from_pdf
+from skill_extractor import extract_skills
+from matches import calculate_match_score
 
 app = Flask(__name__)
 
